@@ -14,8 +14,8 @@ namespace {
         return eth_info;
     }
 
-    IPv4Info parse_ipv4(pcpp::IPv4Layer* ipv4) {
-        IPv4Info data;
+    std::optional<IPv4Info> parse_ipv4(pcpp::IPv4Layer* ipv4) {
+        std::optional<IPv4Info> data;
         const auto* header = ipv4->getIPv4Header();
         const auto header_size = header->internetHeaderLength * 4u;
         if (header_size >= 20 && header_size <= ipv4->getDataLen()) {
@@ -32,13 +32,14 @@ namespace {
             data.dont_fragment = (fragment & 0x4000) != 0;
             data.more_fragments = (fragment & 0x2000) != 0;
             data.fragment_offset = fragment & 0x1FFF;
-            data.options.assign(ip->getData() + 20, ip->getData() + header_size);
+            data.options.assign(ipv4->getData() + 20, ipv4->getData() + header_size);
+            return data;
         }
-        return data;
+        return std::nullopt;
     }
 };
 
-PacketInfo parsePacket(const pcpp::RawPacket& raw_packet) {
+PacketInfo parsePacket(pcpp::RawPacket& raw_packet) {
     PacketInfo info;
 
     // первые 4 поля структуры

@@ -1,0 +1,3 @@
+/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/dozor.dir
+/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/edit_cache.dir
+/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/rebuild_cache.dir

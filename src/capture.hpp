@@ -1,0 +1,7 @@
+#pragma once
+
+#include "types.hpp"
+#include <vector>
+#include <string>
+
+std::vector<PacketInfo> parsePcapFile(const std::string& pcap_file);

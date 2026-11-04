@@ -1,0 +1,55 @@
+rules:
+  - id: SIG-001
+    name: "SQL-injection (OR 1=1)"
+    enabled: true
+    severity: high,
+    protocol: tcp
+    dst_port: [80, 8080]
+    pattern: "' OR 1=1"
+    nocase: true
+    action: block
+
+  - id: SIG-002
+    name: "SQL-injection (UNION SELECT)"
+    severity: high
+    protocol: tcp
+    dst_port: [80, 8080]
+    pattern: "UNION SELECT"
+    nocase: true
+    action: block
+
+  - id: SIG-003
+    name: "Directory traversal"
+    severity: high
+    protocol: tcp
+    dst_port: [80, 8080]
+    pattern: "../../"
+    action: block
+
+  - id: SIG-004
+    name: "XSS (teg: script)"
+    enabled: true
+    severity: medium
+    protocol: tcp
+    dst_port: [80, 8080]
+    pattern: "<script>"
+    nocase: true
+    action: alert
+
+  - id: SIG-005
+    name: "Command injection (/bin/bash)"
+    enabled: true
+    severity: high
+    protocol: any
+    pattern_hex: "2f62696e2f7368"
+    action: alert
+
+  - id: SIG-006
+    name: "Scanner sqlmap"
+    enabled: true
+    severity: medium
+    protocol: tcp
+    dst_protocol: [80, 8080]
+    pattern: "sqlmap"
+    nocase: true
+    action: alert

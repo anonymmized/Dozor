@@ -1,0 +1,36 @@
+rules:
+  - id: BEH-001
+    name: "Port scan (SYN)"
+    enabled: true
+    severity: medium
+    protocol: tcp
+    tcp_flags: syn
+    track: src_ip
+    count: distinct_dst_ports
+    threshold: 20
+    window_sec: 10
+    action: alert
+
+  - id: BEH-002
+    name: "SSH brute force"
+    enabled: true
+    severity: high
+    protocol: tcp
+    dst_port: [22]
+    track: src_ip
+    count: established_connections
+    threshold: 10
+    window_sec: 60
+    action: block
+
+  - id: BEH-003
+    name: "SYN flood"
+    enabled: true
+    severity: high
+    protocol: tcp
+    tcp_flags: syn
+    track: dst_ip
+    count: packets
+    threshold: 1000
+    window_sec: 1
+    action: alert

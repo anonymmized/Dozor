@@ -9,7 +9,13 @@
 
 namespace {
   const int BLOCK_SECONDS = 600; // Временно, пока нету правил блокировки
-  const std::vector<std::string> PROTECTED_IPS = {"127.0.0.1"};
+  const std::vector<std::string> PROTECTED_IPS = {
+    "127.0.0.1",
+    "10.0.0.5",
+    "10.0.0.1",
+    "8.8.8.8",
+    "203.0.113.7",
+  };
 
   bool runNft(const std::string& command) {
     nft_ctx* ctx = nft_ctx_new(NFT_CTX_DEFAULT);

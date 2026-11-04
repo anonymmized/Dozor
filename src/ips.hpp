@@ -3,4 +3,4 @@
 #include <string>
 
 bool ipsInit();
-bool ipsBlock(const std::string& ip)
+bool ipsBlock(const std::string& ip);

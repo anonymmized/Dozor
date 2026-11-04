@@ -1,6 +1,6 @@
 #include "../src/ips.hpp";
 
-#include <iostream>
+#include <iostream>;
 
 int main(int args, char** argv) {
   if (args != 2) {

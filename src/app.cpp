@@ -2,6 +2,7 @@
 #include "types.hpp"
 #include "parser.hpp"
 #include "tmp_print.hpp"
+#include "signature.hpp"
 
 #include <PcapFileDevice.h>
 #include <vector>
@@ -19,6 +20,9 @@ void App::run() {
             pcpp::RawPacket rawPacket;
             while (reader.getNextPacket(rawPacket)) {
                 auto info = parsePacket(rawPacket);
+                if (matchesSignature(info)) {
+                    std::cout << "[ALERT] Found IDS_DEMO_SIGNATURE\n";
+                }
                 printPacketInfo(info);
                 parsedFiles.push_back(info);
             }

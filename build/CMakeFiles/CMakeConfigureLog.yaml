@@ -2895,3 +2895,48 @@ events:
         1.10.1
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/homebrew/lib/cmake/pcapplusplus/FindPCAP.cmake:111 (try_run)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)"
+      - "/opt/homebrew/lib/cmake/pcapplusplus/PcapPlusPlusConfig.cmake:47 (find_dependency)"
+      - "CMakeLists.txt:3 (find_package)"
+    directories:
+      source: "/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/CMakeTmp"
+      binary: "/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/homebrew/lib/cmake/pcapplusplus/modules;/opt/homebrew/lib/cmake/pcapplusplus"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "COMPILE_RESULT_VAR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6d13/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c6d13.dir/build.make CMakeFiles/cmTC_c6d13.dir/build
+        Building CXX object CMakeFiles/cmTC_c6d13.dir/detect_pcap_version.cpp.o
+        /usr/bin/c++   -arch arm64 -MD -MT CMakeFiles/cmTC_c6d13.dir/detect_pcap_version.cpp.o -MF CMakeFiles/cmTC_c6d13.dir/detect_pcap_version.cpp.o.d -o CMakeFiles/cmTC_c6d13.dir/detect_pcap_version.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/build/detect_pcap_version.cpp
+        Linking CXX executable cmTC_c6d13
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6d13.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 CMakeFiles/cmTC_c6d13.dir/detect_pcap_version.cpp.o -o cmTC_c6d13  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libpcap.tbd
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_RESULT_VAR"
+      cached: true
+      stdout: |
+        1.10.1
+      exitCode: 0
+...

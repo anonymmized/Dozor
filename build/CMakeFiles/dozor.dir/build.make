@@ -86,21 +86,101 @@ CMakeFiles/dozor.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/main.cpp -o CMakeFiles/dozor.dir/src/main.cpp.s
 
+CMakeFiles/dozor.dir/src/app.cpp.o: CMakeFiles/dozor.dir/flags.make
+CMakeFiles/dozor.dir/src/app.cpp.o: /Users/insany/Documents/osnova/proga/cpp/Dozor/src/app.cpp
+CMakeFiles/dozor.dir/src/app.cpp.o: CMakeFiles/dozor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dozor.dir/src/app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dozor.dir/src/app.cpp.o -MF CMakeFiles/dozor.dir/src/app.cpp.o.d -o CMakeFiles/dozor.dir/src/app.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/src/app.cpp
+
+CMakeFiles/dozor.dir/src/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dozor.dir/src/app.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/insany/Documents/osnova/proga/cpp/Dozor/src/app.cpp > CMakeFiles/dozor.dir/src/app.cpp.i
+
+CMakeFiles/dozor.dir/src/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/app.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/app.cpp -o CMakeFiles/dozor.dir/src/app.cpp.s
+
+CMakeFiles/dozor.dir/src/cmd_parse.cpp.o: CMakeFiles/dozor.dir/flags.make
+CMakeFiles/dozor.dir/src/cmd_parse.cpp.o: /Users/insany/Documents/osnova/proga/cpp/Dozor/src/cmd_parse.cpp
+CMakeFiles/dozor.dir/src/cmd_parse.cpp.o: CMakeFiles/dozor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dozor.dir/src/cmd_parse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dozor.dir/src/cmd_parse.cpp.o -MF CMakeFiles/dozor.dir/src/cmd_parse.cpp.o.d -o CMakeFiles/dozor.dir/src/cmd_parse.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/src/cmd_parse.cpp
+
+CMakeFiles/dozor.dir/src/cmd_parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dozor.dir/src/cmd_parse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/insany/Documents/osnova/proga/cpp/Dozor/src/cmd_parse.cpp > CMakeFiles/dozor.dir/src/cmd_parse.cpp.i
+
+CMakeFiles/dozor.dir/src/cmd_parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/cmd_parse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/cmd_parse.cpp -o CMakeFiles/dozor.dir/src/cmd_parse.cpp.s
+
+CMakeFiles/dozor.dir/src/capture.cpp.o: CMakeFiles/dozor.dir/flags.make
+CMakeFiles/dozor.dir/src/capture.cpp.o: /Users/insany/Documents/osnova/proga/cpp/Dozor/src/capture.cpp
+CMakeFiles/dozor.dir/src/capture.cpp.o: CMakeFiles/dozor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dozor.dir/src/capture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dozor.dir/src/capture.cpp.o -MF CMakeFiles/dozor.dir/src/capture.cpp.o.d -o CMakeFiles/dozor.dir/src/capture.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/src/capture.cpp
+
+CMakeFiles/dozor.dir/src/capture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dozor.dir/src/capture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/insany/Documents/osnova/proga/cpp/Dozor/src/capture.cpp > CMakeFiles/dozor.dir/src/capture.cpp.i
+
+CMakeFiles/dozor.dir/src/capture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/capture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/capture.cpp -o CMakeFiles/dozor.dir/src/capture.cpp.s
+
+CMakeFiles/dozor.dir/src/parser.cpp.o: CMakeFiles/dozor.dir/flags.make
+CMakeFiles/dozor.dir/src/parser.cpp.o: /Users/insany/Documents/osnova/proga/cpp/Dozor/src/parser.cpp
+CMakeFiles/dozor.dir/src/parser.cpp.o: CMakeFiles/dozor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dozor.dir/src/parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dozor.dir/src/parser.cpp.o -MF CMakeFiles/dozor.dir/src/parser.cpp.o.d -o CMakeFiles/dozor.dir/src/parser.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/src/parser.cpp
+
+CMakeFiles/dozor.dir/src/parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dozor.dir/src/parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/insany/Documents/osnova/proga/cpp/Dozor/src/parser.cpp > CMakeFiles/dozor.dir/src/parser.cpp.i
+
+CMakeFiles/dozor.dir/src/parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/parser.cpp -o CMakeFiles/dozor.dir/src/parser.cpp.s
+
+CMakeFiles/dozor.dir/src/tmp_print.cpp.o: CMakeFiles/dozor.dir/flags.make
+CMakeFiles/dozor.dir/src/tmp_print.cpp.o: /Users/insany/Documents/osnova/proga/cpp/Dozor/src/tmp_print.cpp
+CMakeFiles/dozor.dir/src/tmp_print.cpp.o: CMakeFiles/dozor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dozor.dir/src/tmp_print.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dozor.dir/src/tmp_print.cpp.o -MF CMakeFiles/dozor.dir/src/tmp_print.cpp.o.d -o CMakeFiles/dozor.dir/src/tmp_print.cpp.o -c /Users/insany/Documents/osnova/proga/cpp/Dozor/src/tmp_print.cpp
+
+CMakeFiles/dozor.dir/src/tmp_print.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dozor.dir/src/tmp_print.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/insany/Documents/osnova/proga/cpp/Dozor/src/tmp_print.cpp > CMakeFiles/dozor.dir/src/tmp_print.cpp.i
+
+CMakeFiles/dozor.dir/src/tmp_print.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dozor.dir/src/tmp_print.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/insany/Documents/osnova/proga/cpp/Dozor/src/tmp_print.cpp -o CMakeFiles/dozor.dir/src/tmp_print.cpp.s
+
 # Object files for target dozor
 dozor_OBJECTS = \
-"CMakeFiles/dozor.dir/src/main.cpp.o"
+"CMakeFiles/dozor.dir/src/main.cpp.o" \
+"CMakeFiles/dozor.dir/src/app.cpp.o" \
+"CMakeFiles/dozor.dir/src/cmd_parse.cpp.o" \
+"CMakeFiles/dozor.dir/src/capture.cpp.o" \
+"CMakeFiles/dozor.dir/src/parser.cpp.o" \
+"CMakeFiles/dozor.dir/src/tmp_print.cpp.o"
 
 # External object files for target dozor
 dozor_EXTERNAL_OBJECTS =
 
 dozor: CMakeFiles/dozor.dir/src/main.cpp.o
+dozor: CMakeFiles/dozor.dir/src/app.cpp.o
+dozor: CMakeFiles/dozor.dir/src/cmd_parse.cpp.o
+dozor: CMakeFiles/dozor.dir/src/capture.cpp.o
+dozor: CMakeFiles/dozor.dir/src/parser.cpp.o
+dozor: CMakeFiles/dozor.dir/src/tmp_print.cpp.o
 dozor: CMakeFiles/dozor.dir/build.make
 dozor: /opt/homebrew/lib/libPcap++.a
 dozor: /opt/homebrew/lib/libPacket++.a
 dozor: /opt/homebrew/lib/libCommon++.a
 dozor: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libpcap.tbd
 dozor: CMakeFiles/dozor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dozor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable dozor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dozor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

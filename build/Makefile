@@ -129,6 +129,78 @@ dozor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/build
 .PHONY : dozor/fast
 
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
+
+# target to build an object file
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
+
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
+
+# target to preprocess a source file
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
+
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
+
+# target to generate assembly for a file
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
+
+src/capture.o: src/capture.cpp.o
+.PHONY : src/capture.o
+
+# target to build an object file
+src/capture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/capture.cpp.o
+.PHONY : src/capture.cpp.o
+
+src/capture.i: src/capture.cpp.i
+.PHONY : src/capture.i
+
+# target to preprocess a source file
+src/capture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/capture.cpp.i
+.PHONY : src/capture.cpp.i
+
+src/capture.s: src/capture.cpp.s
+.PHONY : src/capture.s
+
+# target to generate assembly for a file
+src/capture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/capture.cpp.s
+.PHONY : src/capture.cpp.s
+
+src/cmd_parse.o: src/cmd_parse.cpp.o
+.PHONY : src/cmd_parse.o
+
+# target to build an object file
+src/cmd_parse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/cmd_parse.cpp.o
+.PHONY : src/cmd_parse.cpp.o
+
+src/cmd_parse.i: src/cmd_parse.cpp.i
+.PHONY : src/cmd_parse.i
+
+# target to preprocess a source file
+src/cmd_parse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/cmd_parse.cpp.i
+.PHONY : src/cmd_parse.cpp.i
+
+src/cmd_parse.s: src/cmd_parse.cpp.s
+.PHONY : src/cmd_parse.s
+
+# target to generate assembly for a file
+src/cmd_parse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/cmd_parse.cpp.s
+.PHONY : src/cmd_parse.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +225,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/parser.o: src/parser.cpp.o
+.PHONY : src/parser.o
+
+# target to build an object file
+src/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/parser.cpp.o
+.PHONY : src/parser.cpp.o
+
+src/parser.i: src/parser.cpp.i
+.PHONY : src/parser.i
+
+# target to preprocess a source file
+src/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/parser.cpp.i
+.PHONY : src/parser.cpp.i
+
+src/parser.s: src/parser.cpp.s
+.PHONY : src/parser.s
+
+# target to generate assembly for a file
+src/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/parser.cpp.s
+.PHONY : src/parser.cpp.s
+
+src/tmp_print.o: src/tmp_print.cpp.o
+.PHONY : src/tmp_print.o
+
+# target to build an object file
+src/tmp_print.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/tmp_print.cpp.o
+.PHONY : src/tmp_print.cpp.o
+
+src/tmp_print.i: src/tmp_print.cpp.i
+.PHONY : src/tmp_print.i
+
+# target to preprocess a source file
+src/tmp_print.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/tmp_print.cpp.i
+.PHONY : src/tmp_print.cpp.i
+
+src/tmp_print.s: src/tmp_print.cpp.s
+.PHONY : src/tmp_print.s
+
+# target to generate assembly for a file
+src/tmp_print.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/src/tmp_print.cpp.s
+.PHONY : src/tmp_print.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dozor"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
+	@echo "... src/capture.o"
+	@echo "... src/capture.i"
+	@echo "... src/capture.s"
+	@echo "... src/cmd_parse.o"
+	@echo "... src/cmd_parse.i"
+	@echo "... src/cmd_parse.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser.o"
+	@echo "... src/parser.i"
+	@echo "... src/parser.s"
+	@echo "... src/tmp_print.o"
+	@echo "... src/tmp_print.i"
+	@echo "... src/tmp_print.s"
 .PHONY : help
 
 

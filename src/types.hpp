@@ -72,7 +72,7 @@ struct TcpInfo {
     std::uint16_t window_size = 0;
     std::uint8_t header_size = 0;
     std::uint16_t checksum = 0;
-    std::uint16_t urgent_pointer = 0;
+    std::uint16_t urg_pointer = 0;
 
     std::vector<std::uint8_t> options;
 };
@@ -108,7 +108,7 @@ struct PacketInfo {
     std::uint32_t original_size = 0;
     std::int32_t link_type = 0;
     
-    std::optional<EthernerInfo> ethernet;
+    std::optional<EthernetInfo> ethernet;
     std::optional<IPv4Info> ipv4;
     std::optional<TcpInfo> tcp;
     std::optional<UdpInfo> udp;

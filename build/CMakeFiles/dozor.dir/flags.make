@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DPCPP_HAS_PCAP_LIVE_SUPPORT
 
-CXX_INCLUDES = -isystem /opt/homebrew/include/pcapplusplus -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/insany/Documents/osnova/proga/cpp/Dozor/src -isystem /opt/homebrew/include/pcapplusplus -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

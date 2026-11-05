@@ -85,12 +85,12 @@ clean: CMakeFiles/dozor.dir/clean
 CMakeFiles/dozor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=1,2 "Built target dozor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target dozor"
 .PHONY : CMakeFiles/dozor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dozor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dozor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles 0
 .PHONY : CMakeFiles/dozor.dir/rule
@@ -102,7 +102,7 @@ dozor: CMakeFiles/dozor.dir/rule
 # codegen rule for target.
 CMakeFiles/dozor.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dozor.dir/build.make CMakeFiles/dozor.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=1,2 "Finished codegen for target dozor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/insany/Documents/osnova/proga/cpp/Dozor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target dozor"
 .PHONY : CMakeFiles/dozor.dir/codegen
 
 # clean rule for target.

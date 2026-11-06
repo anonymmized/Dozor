@@ -1,0 +1,875 @@
+{
+  "binary": "/Users/kirill/prog/Dozor/build/dozor",
+  "binary_sha256": "e269c78d05b1b081de8e528f8de3c2bac34e479ab3ab81c88c9725c3ddd1021b",
+  "repeat": 3,
+  "warmup": 1,
+  "timeout": 120,
+  "min_pps": null,
+  "cases": [
+    {
+      "profile": "tcp-small",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 10000,
+        "frame_bytes": 700000,
+        "pcap_bytes": 860024,
+        "sha256": "099aecafbe2284060b6a3a6895dbd9761dfc25bf958000ca87672ecefa8a447e"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020506458007730544,
+          "packets_per_second": 487651.25582536927,
+          "frame_mbit_per_second": 273.0847032622068,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020513250026851892,
+          "packets_per_second": 487489.79254432995,
+          "frame_mbit_per_second": 272.9942838248248,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.0205139170284383,
+          "packets_per_second": 487473.9420139542,
+          "frame_mbit_per_second": 272.9854075278144,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020687791984528303,
+          "packets_per_second": 483376.8633926066,
+          "frame_mbit_per_second": 270.6910434998597,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 487473.9420139542,
+      "ok": true
+    },
+    {
+      "profile": "tcp-small",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 100000,
+        "frame_bytes": 7000000,
+        "pcap_bytes": 8600024,
+        "sha256": "651e638408a587f0e157a91ed53fe33fa62b7a545a201a651061361a271ac3b5"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.131664999993518,
+          "packets_per_second": 759503.2848890981,
+          "frame_mbit_per_second": 425.32183953789496,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1306374580017291,
+          "packets_per_second": 765477.2339391081,
+          "frame_mbit_per_second": 428.66725100590054,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1275369169889018,
+          "packets_per_second": 784086.697098864,
+          "frame_mbit_per_second": 439.0885503753638,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.13283883297117427,
+          "packets_per_second": 752791.919074596,
+          "frame_mbit_per_second": 421.56347468177376,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 765477.2339391081,
+      "ok": true
+    },
+    {
+      "profile": "udp-small",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 10000,
+        "frame_bytes": 600000,
+        "pcap_bytes": 760024,
+        "sha256": "b5d18cbe26c923c2eaca49e8facad5a6ab45f8e67e68901d7cd96887ae53a94f"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.019834292004816234,
+          "packets_per_second": 504177.3105675647,
+          "frame_mbit_per_second": 242.00510907243105,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020523791026789695,
+          "packets_per_second": 487239.41824134754,
+          "frame_mbit_per_second": 233.87492075584683,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.02019779197871685,
+          "packets_per_second": 495103.62372963165,
+          "frame_mbit_per_second": 237.6497393902232,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020604084013029933,
+          "packets_per_second": 485340.6729304755,
+          "frame_mbit_per_second": 232.96352300662824,
+          "stdout_bytes": 610033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 487239.41824134754,
+      "ok": true
+    },
+    {
+      "profile": "udp-small",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 100000,
+        "frame_bytes": 6000000,
+        "pcap_bytes": 7600024,
+        "sha256": "3a44c5eff8c3071c7b1bc501738890e7a8abe59d4dc114650b0e291da376b362"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1293524169595912,
+          "packets_per_second": 773081.8051218889,
+          "frame_mbit_per_second": 371.07926645850665,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1328736249706708,
+          "packets_per_second": 752594.8059449196,
+          "frame_mbit_per_second": 361.2455068535614,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1318792919628322,
+          "packets_per_second": 758269.1604697361,
+          "frame_mbit_per_second": 363.96919702547336,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.13295108295278624,
+          "packets_per_second": 752156.3403549871,
+          "frame_mbit_per_second": 361.03504337039374,
+          "stdout_bytes": 6100035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 752594.8059449196,
+      "ok": true
+    },
+    {
+      "profile": "mixed",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 6667,
+        "frame_bytes": 633340,
+        "pcap_bytes": 793364,
+        "sha256": "06dd0cf8417b1b7253e0f518801e587230af9c85c6451a5545db3fff99c6a89a"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.019011917000170797,
+          "packets_per_second": 525985.8855848237,
+          "frame_mbit_per_second": 266.50232062103373,
+          "stdout_bytes": 406719,
+          "observed_counts": [
+            10000,
+            6667
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020557124982587993,
+          "packets_per_second": 486449.34583362506,
+          "frame_mbit_per_second": 246.47026295221448,
+          "stdout_bytes": 406719,
+          "observed_counts": [
+            10000,
+            6667
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.02099558396730572,
+          "packets_per_second": 476290.63404818746,
+          "frame_mbit_per_second": 241.32312813446322,
+          "stdout_bytes": 406719,
+          "observed_counts": [
+            10000,
+            6667
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020681041991338134,
+          "packets_per_second": 483534.63061427523,
+          "frame_mbit_per_second": 244.99345836259607,
+          "stdout_bytes": 406719,
+          "observed_counts": [
+            10000,
+            6667
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 483534.63061427523,
+      "ok": true
+    },
+    {
+      "profile": "mixed",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 66667,
+        "frame_bytes": 6333340,
+        "pcap_bytes": 7933364,
+        "sha256": "9bb5169de3afde565b85b61ed655f720a42bd0687f69e814fa586e14de4d7005"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.0726788750034757,
+          "packets_per_second": 1375915.6287878389,
+          "frame_mbit_per_second": 697.1313190741737,
+          "stdout_bytes": 4066721,
+          "observed_counts": [
+            100000,
+            66667
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.07774829096160829,
+          "packets_per_second": 1286201.9057033611,
+          "frame_mbit_per_second": 651.6763181973861,
+          "stdout_bytes": 4066721,
+          "observed_counts": [
+            100000,
+            66667
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.07765562500571832,
+          "packets_per_second": 1287736.7221323156,
+          "frame_mbit_per_second": 652.4539593399584,
+          "stdout_bytes": 4066721,
+          "observed_counts": [
+            100000,
+            66667
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.07773708301829174,
+          "packets_per_second": 1286387.3471618395,
+          "frame_mbit_per_second": 651.7702753019172,
+          "stdout_bytes": 4066721,
+          "observed_counts": [
+            100000,
+            66667
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 1286387.3471618395,
+      "ok": true
+    },
+    {
+      "profile": "large-payload",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 10000,
+        "frame_bytes": 14540000,
+        "pcap_bytes": 14700024,
+        "sha256": "daacd611034eeda9ce04f5327c9e3ccf4503484517d93105b1bf95eccb5a34ac"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020510207978077233,
+          "packets_per_second": 487562.09642967593,
+          "frame_mbit_per_second": 5671.322305669991,
+          "stdout_bytes": 630033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.02059525001095608,
+          "packets_per_second": 485548.8520256024,
+          "frame_mbit_per_second": 5647.904246761807,
+          "stdout_bytes": 630033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020546625019051135,
+          "packets_per_second": 486697.93655784597,
+          "frame_mbit_per_second": 5661.270398040864,
+          "stdout_bytes": 630033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.01963916700333357,
+          "packets_per_second": 509186.5657185252,
+          "frame_mbit_per_second": 5922.858132437886,
+          "stdout_bytes": 630033,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 486697.93655784597,
+      "ok": true
+    },
+    {
+      "profile": "large-payload",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 100000,
+        "frame_bytes": 145400000,
+        "pcap_bytes": 147000024,
+        "sha256": "25929b5ef44f3a938c89bb654779620721da25a46c26ffbf2af8999a5523bb7d"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.18338895798660815,
+          "packets_per_second": 545289.1008154505,
+          "frame_mbit_per_second": 6342.8028206853205,
+          "stdout_bytes": 6300035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.18786516599357128,
+          "packets_per_second": 532296.6579308374,
+          "frame_mbit_per_second": 6191.6747250515,
+          "stdout_bytes": 6300035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.187920915952418,
+          "packets_per_second": 532138.7430088954,
+          "frame_mbit_per_second": 6189.8378586794715,
+          "stdout_bytes": 6300035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.18799933296395466,
+          "packets_per_second": 531916.7808918403,
+          "frame_mbit_per_second": 6187.255995333886,
+          "stdout_bytes": 6300035,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 532138.7430088954,
+      "ok": true
+    },
+    {
+      "profile": "many-flows",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 10000,
+        "frame_bytes": 700000,
+        "pcap_bytes": 860024,
+        "sha256": "0e997eafdd052c1e4b98fea1d5e9f599699ff32d2d233caafcdb6b5b669d3711"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.02069787500659004,
+          "packets_per_second": 483141.3851333086,
+          "frame_mbit_per_second": 270.5591756746528,
+          "stdout_bytes": 623157,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020420041983015835,
+          "packets_per_second": 489714.95789858804,
+          "frame_mbit_per_second": 274.2403764232093,
+          "stdout_bytes": 623157,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020335040986537933,
+          "packets_per_second": 491761.9790695348,
+          "frame_mbit_per_second": 275.38670827893947,
+          "stdout_bytes": 623157,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020230499969329685,
+          "packets_per_second": 494303.1568750369,
+          "frame_mbit_per_second": 276.80976785002065,
+          "stdout_bytes": 623157,
+          "observed_counts": [
+            10000,
+            10000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 491761.9790695348,
+      "ok": true
+    },
+    {
+      "profile": "many-flows",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 100000,
+        "frame_bytes": 7000000,
+        "pcap_bytes": 8600024,
+        "sha256": "4102ce5ed95cd5538b72a8daeb7cb71c759f054cb544f85c7765b3ea5ca8f6e1"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1326831670012325,
+          "packets_per_second": 753675.1063461659,
+          "frame_mbit_per_second": 422.0580595538529,
+          "stdout_bytes": 6300705,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.1329898750409484,
+          "packets_per_second": 751936.9423364702,
+          "frame_mbit_per_second": 421.08468770842336,
+          "stdout_bytes": 6300705,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.13246674998663366,
+          "packets_per_second": 754906.4199890941,
+          "frame_mbit_per_second": 422.7475951938927,
+          "stdout_bytes": 6300705,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.13283379201311618,
+          "packets_per_second": 752820.4870499057,
+          "frame_mbit_per_second": 421.5794727479472,
+          "stdout_bytes": 6300705,
+          "observed_counts": [
+            100000,
+            100000
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 752820.4870499057,
+      "ok": true
+    },
+    {
+      "profile": "non-ipv4",
+      "input": {
+        "packets": 10000,
+        "ipv4_tcp_udp": 0,
+        "frame_bytes": 600000,
+        "pcap_bytes": 760024,
+        "sha256": "abddf774f98f2d071583790fcefcdaf09c9b91b60ffb92d558454a96baab8ba1"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.010581459035165608,
+          "packets_per_second": 945049.2570794602,
+          "frame_mbit_per_second": 453.6236433981409,
+          "stdout_bytes": 29,
+          "observed_counts": [
+            10000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.010478249983862042,
+          "packets_per_second": 954357.8379406281,
+          "frame_mbit_per_second": 458.0917622115015,
+          "stdout_bytes": 29,
+          "observed_counts": [
+            10000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.010394832992460579,
+          "packets_per_second": 962016.417892721,
+          "frame_mbit_per_second": 461.7678805885061,
+          "stdout_bytes": 29,
+          "observed_counts": [
+            10000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.010367624985519797,
+          "packets_per_second": 964541.0606543688,
+          "frame_mbit_per_second": 462.97970911409703,
+          "stdout_bytes": 29,
+          "observed_counts": [
+            10000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 962016.417892721,
+      "ok": true
+    },
+    {
+      "profile": "non-ipv4",
+      "input": {
+        "packets": 100000,
+        "ipv4_tcp_udp": 0,
+        "frame_bytes": 6000000,
+        "pcap_bytes": 7600024,
+        "sha256": "e478d763492be881f58b86d405472de23b85eba33c6caa42f2da4e7c2a1061e2"
+      },
+      "warmups": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.01911400002427399,
+          "packets_per_second": 5231767.284346768,
+          "frame_mbit_per_second": 2511.248296486449,
+          "stdout_bytes": 30,
+          "observed_counts": [
+            100000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "runs": [
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020495374978054315,
+          "packets_per_second": 4879149.569455367,
+          "frame_mbit_per_second": 2341.991793338576,
+          "stdout_bytes": 30,
+          "observed_counts": [
+            100000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020617166999727488,
+          "packets_per_second": 4850326.914523308,
+          "frame_mbit_per_second": 2328.156918971188,
+          "stdout_bytes": 30,
+          "observed_counts": [
+            100000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        },
+        {
+          "ok": true,
+          "returncode": 0,
+          "seconds": 0.020431208016816527,
+          "packets_per_second": 4894473.19598978,
+          "frame_mbit_per_second": 2349.3471340750943,
+          "stdout_bytes": 30,
+          "observed_counts": [
+            100000,
+            0
+          ],
+          "stderr": "",
+          "error": null
+        }
+      ],
+      "median_pps": 4879149.569455367,
+      "ok": true
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,44 @@
+{
+  "tcp-small.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 10000,
+    "frame_bytes": 700000,
+    "pcap_bytes": 860024,
+    "sha256": "099aecafbe2284060b6a3a6895dbd9761dfc25bf958000ca87672ecefa8a447e"
+  },
+  "udp-small.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 10000,
+    "frame_bytes": 600000,
+    "pcap_bytes": 760024,
+    "sha256": "b5d18cbe26c923c2eaca49e8facad5a6ab45f8e67e68901d7cd96887ae53a94f"
+  },
+  "mixed.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 6667,
+    "frame_bytes": 633340,
+    "pcap_bytes": 793364,
+    "sha256": "06dd0cf8417b1b7253e0f518801e587230af9c85c6451a5545db3fff99c6a89a"
+  },
+  "large-payload.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 10000,
+    "frame_bytes": 14540000,
+    "pcap_bytes": 14700024,
+    "sha256": "daacd611034eeda9ce04f5327c9e3ccf4503484517d93105b1bf95eccb5a34ac"
+  },
+  "many-flows.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 10000,
+    "frame_bytes": 700000,
+    "pcap_bytes": 860024,
+    "sha256": "0e997eafdd052c1e4b98fea1d5e9f599699ff32d2d233caafcdb6b5b669d3711"
+  },
+  "non-ipv4.pcap": {
+    "packets": 10000,
+    "ipv4_tcp_udp": 0,
+    "frame_bytes": 600000,
+    "pcap_bytes": 760024,
+    "sha256": "abddf774f98f2d071583790fcefcdaf09c9b91b60ffb92d558454a96baab8ba1"
+  }
+}

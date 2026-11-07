@@ -1,0 +1,61 @@
+signatures:
+  - id: WEB_TRAVERSAL
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "../"
+    case_insensitive: true
+
+  - id: WEB_TRAVERSAL_ENCODED
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "%2e%2e%2f"
+    case_insensitive: true
+
+  - id: SQLI_TAUTOLOGY
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "' OR 1=1"
+    case_insensitive: true
+
+  - id: SQLI_UNION_SELECT
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "UNION SELECT"
+    case_insensitive: true
+
+  - id: WEB_XSS_SCRIPT
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "<script"
+    case_insensitive: true
+
+  - id: CMDI_PASSWD
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: ";cat /etc/passwd"
+    case_insensitive: true
+
+  - id: CMDI_WHOAMI
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "|whoami"
+    case_insensitive: true
+
+  - id: WEB_SCANNER_SQLMAP
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "sqlmap/"
+    case_insensitive: true
+
+  - id: WEB_PROBE_ENV
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "/.env"
+    case_insensitive: true
+
+  - id: WEB_PROBE_GIT
+    protocol: TCP
+    dst_ports: [80, 8080]
+    contains: "/.git/config"
+    case_insensitive: true
+

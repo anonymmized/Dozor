@@ -5,7 +5,8 @@
 
 enum class Modes {
     Pcap,
-    Interface
+    Interface,
+    InterfaceList
 };
 
 struct CmdContent {

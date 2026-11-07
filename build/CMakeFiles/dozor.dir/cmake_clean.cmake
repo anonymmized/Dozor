@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dozor.dir/src/capture.cpp.o.d"
   "CMakeFiles/dozor.dir/src/cmd_parse.cpp.o"
   "CMakeFiles/dozor.dir/src/cmd_parse.cpp.o.d"
+  "CMakeFiles/dozor.dir/src/engine.cpp.o"
+  "CMakeFiles/dozor.dir/src/engine.cpp.o.d"
   "CMakeFiles/dozor.dir/src/main.cpp.o"
   "CMakeFiles/dozor.dir/src/main.cpp.o.d"
   "CMakeFiles/dozor.dir/src/parser.cpp.o"

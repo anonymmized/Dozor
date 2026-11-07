@@ -1,6 +1,7 @@
 #include "app.hpp"
 #include "types.hpp"
 #include "parser.hpp"
+#include "engine.hpp"
 #include "tmp_print.hpp"
 #include "signature.hpp"
 
@@ -11,7 +12,7 @@
 
 void App::run() {
     if (cmd.mode == Modes::Pcap) {
-        std::vector<PacketInfo> parsedFiles{};
+        Engine engine;
         for (const auto& file : cmd.content) {
             pcpp::PcapFileReaderDevice reader(file);
             if (!reader.open()) {
@@ -20,11 +21,11 @@ void App::run() {
             pcpp::RawPacket rawPacket;
             while (reader.getNextPacket(rawPacket)) {
                 auto info = parsePacket(rawPacket);
-                if (matchesSignature(info)) {
-                    std::cout << "[ALERT] Found IDS_DEMO_SIGNATURE\n";
+                auto alerts = engine.process(info);
+                for (const auto& alert : alerts) {
+                    printAlert(alert);
                 }
-                printPacketInfo(info);
-                parsedFiles.push_back(info);
+                //printPacketInfo(info);
             }
             reader.close();
         }

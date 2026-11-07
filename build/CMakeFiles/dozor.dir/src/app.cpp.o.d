@@ -781,7 +781,9 @@ CMakeFiles/dozor.dir/src/app.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
   /opt/homebrew/include/pcapplusplus/DeprecationUtils.h \
+  /Users/insany/Documents/osnova/proga/cpp/Dozor/src/engine.hpp \
   /Users/insany/Documents/osnova/proga/cpp/Dozor/src/tmp_print.hpp \
+  /Users/insany/Documents/osnova/proga/cpp/Dozor/src/signature.hpp \
   /opt/homebrew/include/pcapplusplus/PcapFileDevice.h \
   /opt/homebrew/include/pcapplusplus/Device.h \
   /opt/homebrew/include/pcapplusplus/PointerVector.h \

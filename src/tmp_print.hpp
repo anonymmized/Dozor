@@ -1,5 +1,5 @@
 #pragma once
 
-#include "types.hpp"
+#include "engine.hpp"
 
-void printPacketInfo(const PacketInfo& info);
+void printAlert(const Alert& alert);

@@ -1,0 +1,34 @@
+behaviors:
+  - id: PORT_SCAN
+    protocol: TCP
+    window_seconds: 5
+    tcp_syn_only: true
+    min_unique_dst_ports: 20
+    group_by: [src_ip, dst_ip]
+
+  - id: HOST_SCAN
+    protocol: TCP
+    window_seconds: 5
+    tcp_syn_only: true
+    min_unique_dst_ips: 20
+    group_by: [src_ip, dst_port]
+
+  - id: SYN_FLOOD
+    protocol: TCP
+    window_seconds: 1
+    tcp_syn_without_ack: true
+    min_packets: 100
+    group_by: [dst_ip, dst_port]
+
+  - id: UDP_RATE
+    protocol: UDP
+    window_seconds: 1
+    min_packets: 200
+    group_by: [src_ip, dst_ip, dst_port]
+
+  - id: UDP_DISTRIBUTED_RATE
+    protocol: UDP
+    window_seconds: 1
+    min_packets: 1000
+    min_unique_src_ips: 20
+    group_by: [dst_ip, dst_port]

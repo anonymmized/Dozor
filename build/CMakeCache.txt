@@ -219,6 +219,9 @@ dozor_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 dozor_SOURCE_DIR:STATIC=/Users/insany/Documents/osnova/proga/cpp/Dozor
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/opt/homebrew/lib/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries

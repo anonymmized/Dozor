@@ -7,4 +7,5 @@
 #include <string>
 
 std::vector<PacketInfo> parsePcapFile(const std::string& pcap_file);
-void captureInterface(const std::string& interface_name, Engine& engine);
+std::vector<PacketInfo> captureInterface(const std::string& interface_name);
+void printAvailableInterfaces();

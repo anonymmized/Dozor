@@ -11,7 +11,7 @@ add_executable(dozor
     src/parser.cpp
     src/tmp_print.cpp
     src/engine.cpp)
-target_compile_features(dozor PRIVATE cxx_std_17)
+target_compile_features(dozor PRIVATE cxx_std_20)
 target_include_directories(dozor PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
 target_link_libraries(dozor PRIVATE PcapPlusPlus::Pcap++ yaml-cpp::yaml-cpp)
 target_compile_definitions(dozor PRIVATE "DOZOR_RULES_DIR=\"${CMAKE_CURRENT_SOURCE_DIR}/rules\"")

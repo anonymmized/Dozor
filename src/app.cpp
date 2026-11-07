@@ -31,6 +31,13 @@ void App::run() {
             reader.close();
         }
     } else if (cmd.mode == Modes::Interface) {
-        captureInterface(cmd.content.front(), engine);
+        auto packets = captureInterface(cmd.content.front());
+        for (const auto& packet : packets) {
+            for (const auto& alert : engine.process(packet)) {
+                printAlert(alert);
+            }
+        }
+    } else if (cmd.mode == Modes::InterfaceList) {
+        printAvailableInterfaces();
     }
 }

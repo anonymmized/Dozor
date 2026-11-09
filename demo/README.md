@@ -1,74 +1,39 @@
-# Нагрузочные тесты текущей версии Dozor
+# Dozor demo and load measurements
 
-Тестируется существующий CLI `dozor --pcap FILE`: чтение Ethernet PCAP,
-разбор IPv4 TCP/UDP и пропуск остальных пакетов. Python 3.9+, без pip-пакетов.
-Трафик создаётся только в файлах; сетевые интерфейсы не используются.
+Run these commands from the project root after building with CMake.
 
-Из корня проекта:
+## Detection demo
+
+Create six synthetic PCAPs. The generator only writes files; it does not send network traffic.
 
 ```sh
-# Быстрая проверка всех профилей
-python3 demo/load_test.py --packets 1000 --repeat 1 --warmup 0
-
-# Обычный прогон: 10 тыс. и 100 тыс. пакетов, прогрев и три измерения
-python3 demo/load_test.py --report demo/load-results.json
-
-# Более высокая нагрузка и проверка установленного вами порога
-python3 demo/load_test.py --profiles mixed large-payload many-flows \
-  --packets 100000 1000000 --repeat 5 --timeout 300 \
-  --min-pps 100000 --report demo/load-results-stress.json
-
-# Другой исполняемый файл
-python3 demo/load_test.py --binary /absolute/path/to/dozor
+python3 demo/generate_demo_pcaps.py
+python3 demo/check_demo.py
+./build/dozor --pcap tests/ips_block_demo.pcap
+./build/dozor --pcap tests/port_scan_demo.pcap
+./build/dozor --pcap tests/host_scan_demo.pcap
+./build/dozor --pcap tests/syn_rate_demo.pcap
+./build/dozor --pcap tests/udp_rate_demo.pcap
+./build/dozor --pcap tests/distributed_udp_demo.pcap
 ```
 
-Порог `100000` — пример, а не требование к системе. Выберите его по результатам
-замеров на своей машине. По умолчанию порога производительности нет.
+Expected rule IDs are `WEB_XSS_SCRIPT`, `PORT_SCAN`, `HOST_SCAN`, `SYN_FLOOD`, `UDP_RATE` and `UDP_DISTRIBUTED_RATE`. Together these cover the signature action and all five behavior rules. PCAP mode prints block actions as simulations and never modifies PF. It also prints `Read: N, IPv4 TCP/UDP: M` so packet totals are easy to check.
 
-## Сценарии
+To demonstrate real blocking, set up the macOS PF `dozor` anchor as described in the root README, then run live capture with administrator privileges on a test network. The synthetic PCAPs are for offline testing only.
 
-| Профиль | Содержимое | Ожидаемый разбор |
-| --- | --- | --- |
-| tcp-small | TCP с 16 байтами данных | Все пакеты |
-| udp-small | UDP с 16 байтами данных | Все пакеты |
-| mixed | TCP, UDP, ARP по очереди | Только TCP/UDP |
-| large-payload | TCP с 1400 байтами данных | Все пакеты |
-| many-flows | TCP, меняющиеся исходные IP и порты | Все пакеты |
-| non-ipv4 | ARP | Ноль TCP/UDP |
+## PCAP processing speed
 
-Генератор воспроизводим: фиксированные временные метки, корректные IPv4 и
-TCP/UDP checksum, Ethernet-кадры не меньше 60 байт без FCS. PCAP генерируется
-потоково; временные файлы автоматически удаляются после прогона. Прогрев
-выполняется отдельно для каждой пары профиль/число пакетов и тоже проверяется.
+The benchmark creates temporary PCAPs and checks that Dozor reports the correct number of packets. It does not transmit traffic.
 
-## Что измеряется и проверяется
+```sh
+# Quick check
+python3 demo/load_test.py --profiles tcp-small udp-small mixed --packets 1000 --repeat 1 --warmup 0 --report /tmp/dozor-load.json
 
-Для каждого запуска проверяются код завершения 0, отсутствие stderr и итоговые
-счётчики `Read: N, IPv4 TCP/UDP: M`. Таймаут и несовпадение счётчиков дают FAIL.
-Итоговый код скрипта: 0 — успех, 1 — провал сценария/порога, 2 — ошибка запуска.
+# More repeatable local measurements
+python3 demo/load_test.py --packets 10000 100000 --repeat 3 --warmup 1 --report demo/load-results-local.json
 
-JSON содержит SHA-256 бинарника и PCAP, ожидаемые/полученные счётчики,
-длительность каждого запуска, packets/s, Мбит/с по Ethernet-кадрам без FCS,
-размер stdout, медиану packets/s и результат. Медиана считается по успешным
-измерениям; любая ошибка, включая прогрев, всё равно проваливает сценарий.
+# Include large payloads and many flows
+python3 demo/load_test.py --profiles large-payload many-flows --packets 100000 1000000 --repeat 3 --warmup 1 --timeout 300 --report demo/load-results-stress.json
+```
 
-Время включает запуск процесса, чтение PCAP, разбор и запись stdout во временный
-файл. Вывод не удерживается целиком в памяти Python. Мбит/с — скорость обработки
-кадров, а не измерение сетевого канала. Прогретый файловый кэш и диск для stdout
-влияют на результаты; сравнивайте одинаковые профили и окружения. Большие
-значения требуют места под PCAP и текстовый вывод. Запуски последовательные.
-`many-flows` меняет поля пакетов; состояние соединений текущая версия не ведёт.
-
-## Ограничения незавершённой версии
-
-В текущих исходниках `main.cpp` обращается к необъявленному `App`, в `types.hpp`
-есть `EthernerInfo` вместо `EthernetInfo`, `capture.cpp` включает отсутствующий
-`parser.hpp`, а CMake собирает только `main.cpp`. Поэтому эти тесты не меняют
-исходники и используют готовый `build/dozor` либо бинарник из `--binary`.
-SHA-256 в отчёте позволяет установить, какой именно бинарник был проверен;
-результат не означает, что актуальные исходники собираются.
-
-Движок, сигнатуры, поведенческий анализ и захват интерфейсов ещё не реализованы.
-Тесты не оценивают обнаружение атак, потери live-захвата, задержку отдельного
-пакета, потребление памяти или полное содержимое `PacketInfo`. После изменения
-контракта CLI проверку итогового вывода нужно адаптировать.
+The report includes packets per second and estimated Ethernet frame throughput. File-cache and disk speed affect measurements; compare runs on the same machine and with the same options. These numbers do not represent live capture loss, packet latency or PF filtering speed.

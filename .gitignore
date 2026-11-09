@@ -1,4 +1,6 @@
 /build/
+/state/
+/demo/load-results*.json
 /cmake-build-*/
 /CMakeFiles/
 /CMakeCache.txt

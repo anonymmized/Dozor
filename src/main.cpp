@@ -7,8 +7,8 @@ int main(int argc, char** argv) {
         App app(argc, argv);
         app.run();
         return 0;
-    } catch (std::exception& e) {
-        std::cerr << "[ERROR] " << e.what();
+    } catch (const std::exception& e) {
+        std::cerr << "[ERROR] " << e.what() << '\n';
         return 1;
     }
 }

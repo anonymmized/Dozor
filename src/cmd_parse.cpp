@@ -68,6 +68,9 @@ CmdContent parseCommandLine(int argc, char** argv) {
     }
     if (cmd.mode == Modes::Interface) {
         cmd.content = dump_line(argc, argv);
+        if (cmd.content.size() != 1) {
+            throw std::invalid_argument("--int accepts exactly one interface name");
+        }
         checkInterfaces(cmd.content);
     }
     if (cmd.mode == Modes::InterfaceList) {

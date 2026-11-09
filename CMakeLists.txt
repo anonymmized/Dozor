@@ -10,7 +10,9 @@ add_executable(dozor
     src/capture.cpp
     src/parser.cpp
     src/tmp_print.cpp
-    src/engine.cpp)
+    src/engine.cpp
+    src/ips.cpp
+    src/firewall.cpp)
 target_compile_features(dozor PRIVATE cxx_std_20)
 target_include_directories(dozor PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
 target_link_libraries(dozor PRIVATE PcapPlusPlus::Pcap++ yaml-cpp::yaml-cpp)

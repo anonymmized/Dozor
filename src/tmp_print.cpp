@@ -3,7 +3,11 @@
 #include "tmp_print.hpp"
 
 void printAlert(const Alert& alert) {
-    std::cout << "[ALERT] " << alert.rule_id << '\n'
+    const char* category = alert.action == "block" ? "[BLOCK] "
+                         : alert.behavioral ? "[BEHAVIOR] "
+                                            : "[ALERT] ";
+    std::cout << category
+              << alert.rule_id << '\n'
               << "  Time: " << alert.timestamp_us << " us\n"
               << "  Message: " << alert.message << '\n'
               << "  Source: "

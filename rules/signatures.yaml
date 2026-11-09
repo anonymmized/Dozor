@@ -3,59 +3,69 @@ signatures:
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "../"
+    action: alert
     case_insensitive: true
 
   - id: WEB_TRAVERSAL_ENCODED
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "%2e%2e%2f"
+    action: alert
     case_insensitive: true
 
   - id: SQLI_TAUTOLOGY
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "' OR 1=1"
+    action: alert
     case_insensitive: true
 
   - id: SQLI_UNION_SELECT
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "UNION SELECT"
+    action: alert
     case_insensitive: true
 
   - id: WEB_XSS_SCRIPT
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "<script"
+    action: block
     case_insensitive: true
 
   - id: CMDI_PASSWD
     protocol: TCP
     dst_ports: [80, 8080]
     contains: ";cat /etc/passwd"
+    action: block
     case_insensitive: true
 
   - id: CMDI_WHOAMI
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "|whoami"
+    action: block
     case_insensitive: true
 
   - id: WEB_SCANNER_SQLMAP
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "sqlmap/"
+    action: alert
     case_insensitive: true
 
   - id: WEB_PROBE_ENV
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "/.env"
+    action: alert
     case_insensitive: true
 
   - id: WEB_PROBE_GIT
     protocol: TCP
     dst_ports: [80, 8080]
     contains: "/.git/config"
+    action: alert
     case_insensitive: true
 
